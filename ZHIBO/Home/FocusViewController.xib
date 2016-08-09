@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FocusViewController">
+            <connections>
+                <outlet property="jumpingBtn" destination="fcg-Kp-RjG" id="avU-cW-az0"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_nothing" translatesAutoresizingMaskIntoConstraints="NO" id="hoS-6E-6Ds">
+                    <rect key="frame" x="35" y="104" width="250" height="247"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="250" id="uUP-8v-Feb"/>
+                        <constraint firstAttribute="height" constant="247" id="zur-6X-kNf"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fcg-Kp-RjG">
+                    <rect key="frame" x="30" y="399" width="261" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="NCv-gI-HE1"/>
+                        <constraint firstAttribute="width" constant="261" id="tc4-ZO-wl3"/>
+                    </constraints>
+                    <state key="normal" title="去看看当前热门直播">
+                        <color key="titleColor" red="0.96862745098039216" green="0.32549019607843138" blue="0.59607843137254901" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="25"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                            <integer key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="layer.borderUIColor">
+                            <color key="value" red="0.96862745098039216" green="0.32549019607843138" blue="0.59607843137254901" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="jumping:" destination="-1" eventType="touchUpInside" id="jDs-eC-6Kr"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="你关注的主播还未开播" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TVm-pa-M6z">
+                    <rect key="frame" x="75" y="356" width="170" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="XLy-Wz-aFx"/>
+                        <constraint firstAttribute="width" constant="170" id="kBT-Dc-ccK"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="fcg-Kp-RjG" firstAttribute="top" secondItem="TVm-pa-M6z" secondAttribute="bottom" constant="22" id="7GR-Im-g3M"/>
+                <constraint firstItem="fcg-Kp-RjG" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="7ea-0x-V4R"/>
+                <constraint firstItem="hoS-6E-6Ds" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" multiplier="0.8" id="Xyu-K5-kpB"/>
+                <constraint firstItem="hoS-6E-6Ds" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="hWm-Hz-L0P"/>
+                <constraint firstItem="TVm-pa-M6z" firstAttribute="top" secondItem="hoS-6E-6Ds" secondAttribute="bottom" constant="5" id="kyf-dm-03k"/>
+                <constraint firstItem="TVm-pa-M6z" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="l29-ll-5Mh"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon_nothing" width="320" height="316"/>
+    </resources>
+</document>

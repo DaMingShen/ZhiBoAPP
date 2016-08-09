@@ -1,0 +1,49 @@
+//
+//  WZPrefixHeader.pch
+//  WanZhongProperty
+//
+//  Created by 万众科技 on 16/7/12.
+//  Copyright © 2016年 WanZhong. All rights reserved.
+//
+
+#ifndef WZPrefixHeader_pch
+#define WZPrefixHeader_pch
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+
+#pragma mark - Global
+#import "AppDelegate.h"
+#import "WZGlobal.h"
+#import "NSObject+WZHUB.h"
+#import "WZOperation.h"
+
+#pragma mark - Define
+#import "WZDefine.h"
+#import "WZAPIHeader.h"
+
+#pragma mark - Vender
+#import <AFNetworking.h>
+#import <IQKeyboardManager.h>
+#import <Masonry.h>
+#import <MJRefresh.h>
+#import <MJExtension.h>
+#import <UIImageView+WebCache.h>
+#import <IJKMediaFramework/IJKMediaFramework.h>
+#import <LFLiveKit.h>
+
+#pragma mark - SU
+#import "SuCategory.h"
+#import "SuTool.h"
+
+#pragma mark - Category
+#import "UIScrollView+SURefresh.h"
+#import "CALayer+SUBorder.h"
+
+
+
+
+#endif
+
+#endif /* WZPrefixHeader_pch */

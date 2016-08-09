@@ -1,0 +1,64 @@
+PODS:
+  - AFNetworking (3.1.0):
+    - AFNetworking/NSURLSession (= 3.1.0)
+    - AFNetworking/Reachability (= 3.1.0)
+    - AFNetworking/Security (= 3.1.0)
+    - AFNetworking/Serialization (= 3.1.0)
+    - AFNetworking/UIKit (= 3.1.0)
+  - AFNetworking/NSURLSession (3.1.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.1.0)
+  - AFNetworking/Security (3.1.0)
+  - AFNetworking/Serialization (3.1.0)
+  - AFNetworking/UIKit (3.1.0):
+    - AFNetworking/NSURLSession
+  - BarrageRenderer (1.8.1)
+  - CocoaAsyncSocket (7.4.3):
+    - CocoaAsyncSocket/All (= 7.4.3)
+  - CocoaAsyncSocket/All (7.4.3):
+    - CocoaAsyncSocket/GCD
+    - CocoaAsyncSocket/RunLoop
+  - CocoaAsyncSocket/GCD (7.4.3)
+  - CocoaAsyncSocket/RunLoop (7.4.3)
+  - IQKeyboardManager (3.3.7)
+  - LFLiveKit (1.6.4):
+    - CocoaAsyncSocket (~> 7.4.1)
+    - LMGPUImage (~> 0.1.9)
+    - pili-librtmp (~> 1.0.2)
+  - LMGPUImage (0.1.9)
+  - Masonry (1.0.1)
+  - MJExtension (3.0.11)
+  - MJRefresh (1.4.7)
+  - pili-librtmp (1.0.3)
+  - SDWebImage (3.7.6):
+    - SDWebImage/Core (= 3.7.6)
+  - SDWebImage/Core (3.7.6)
+
+DEPENDENCIES:
+  - AFNetworking (~> 3.1.0)
+  - BarrageRenderer (~> 1.8.1)
+  - IQKeyboardManager (~> 3.3.4)
+  - LFLiveKit (~> 1.6.4)
+  - Masonry (~> 1.0.1)
+  - MJExtension (~> 3.0.11)
+  - MJRefresh (~> 1.4.7)
+  - SDWebImage (~> 3.7.2)
+
+SPEC CHECKSUMS:
+  AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  BarrageRenderer: a5dc2c9d38028be819b64ed2b7dfa240490b378a
+  CocoaAsyncSocket: a18c75dca4b08723628a0bacca6e94803d90be91
+  IQKeyboardManager: 249c3946acf61345c18b038eb50863fe2793e3a8
+  LFLiveKit: 9de097e6341843bedfd523eb2154259ee51539e7
+  LMGPUImage: 8e2e5d0f7065953eb7812de842db4c87d59abf09
+  Masonry: a1a931a0d08870ed8ae415a2ea5ea68ebcac77df
+  MJExtension: f9ae6ddc0f1c482c3c9af750280ccebd14381958
+  MJRefresh: 6b140993028fa30f1fcb88e82925a7c7911415cf
+  pili-librtmp: 50faa17413c635cca5ceccb1a8f9f6acc6587a45
+  SDWebImage: c325cf02c30337336b95beff20a13df489ec0ec9
+
+PODFILE CHECKSUM: 57a17c0b587f06b1c8d5fe20036dc783b486fcf7
+
+COCOAPODS: 1.0.1
